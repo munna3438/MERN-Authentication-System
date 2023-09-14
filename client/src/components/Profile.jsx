@@ -41,7 +41,7 @@ const Profile = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:4000/profile", {
+      .get("https://mern-auth-lt88.onrender.com/profile", {
         headers: {
           Authorization: token,
         },
