@@ -17,7 +17,7 @@ const Login = () => {
     validateOnChange: false,
     onSubmit: async (values) => {
       axios
-        .post("http://localhost:4000/login", {
+        .post("https://mern-auth-lt88.onrender.com/login", {
           username: values.username,
           password: values.password,
         })
