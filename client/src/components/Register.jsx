@@ -24,7 +24,7 @@ const Register = () => {
     onSubmit: async (values) => {
       values = await Object.assign(values, { profile: File || "" });
       axios
-        .post("http://localhost:4000/register", {
+        .post("https://mern-auth-lt88.onrender.com/register", {
           username: values.username,
           password: values.password,
         })
