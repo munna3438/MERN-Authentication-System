@@ -40,7 +40,7 @@ export const usernameValidate = (values) => {
 };
 
 //password validation
-const specialCharecter = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+const specialCharecter = /[`!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/;
 const passwordVerify = (error = {}, values) => {
   if (!values.password) {
     error.password = toastErrorMsg("password is required...");

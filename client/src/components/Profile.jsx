@@ -53,96 +53,10 @@ const Profile = () => {
       .catch((err) => {
         navigate("/login");
       });
-  }, []);
+  });
   return (
     <div className="container mx-auto ">
-      {/* <Toaster position="top-center" reverseOrder={false}></Toaster> */}
       <div className="flex justify-center items-center h-screen">
-        {/*
-        <div className={styles.glass}>
-          <div className="title flex-col items-center ">
-            <h4 className="text-4xl font-bold">Profile!</h4>
-            <span className="mx-auto text-gray-500 w-2/4 block ">
-              you can update the details.
-            </span>
-          </div>
-          <form className="py-1" onSubmit={formik.handleSubmit}>
-            <div className="profile flex justify-center py-4">
-              <label htmlFor="profile">
-                <img
-                  src={File || profile}
-                  className={styles.profileImg}
-                  alt="avater"
-                />
-              </label>
-              <input
-                onChange={onUpload}
-                type="file"
-                name="profile"
-                id="profile"
-                style={{ display: "none" }}
-              />
-            </div>
-            <div className="texbox flex flex-col items-center gap-2">
-              <div className="name flex w-5/6 gap-6">
-                <input
-                  className={styles.text_box}
-                  type="text"
-                  name="firstName"
-                  value={formik.values.firstName}
-                  onChange={formik.handleChange}
-                  placeholder="Frist Name"
-                />
-                <input
-                  className={styles.text_box}
-                  type="text"
-                  name="lastName"
-                  value={formik.values.lastName}
-                  onChange={formik.handleChange}
-                  placeholder="Last Name"
-                />
-              </div>
-              <div className="name flex w-5/6 gap-6">
-                <input
-                  className={styles.text_box}
-                  type="text"
-                  name="phoneNumber"
-                  value={formik.values.phoneNumber}
-                  onChange={formik.handleChange}
-                  placeholder="Phone Number"
-                />
-                <input
-                  className={styles.text_box}
-                  type="text"
-                  name="zipCode"
-                  value={formik.values.zipCode}
-                  onChange={formik.handleChange}
-                  placeholder="Zip Code"
-                />
-              </div>
-              <input
-                className={styles.text_box}
-                type="text"
-                name="address"
-                value={formik.values.address}
-                onChange={formik.handleChange}
-                placeholder="Address"
-              />
-              <button className={styles.btn} type="submit">
-                Update
-              </button>
-            </div>
-            <div className="text-center">
-              <span>
-                come back later? &nbsp;
-                <Link className="text-red-600" to="/">
-                  Logout
-                </Link>
-              </span>
-            </div>
-          </form>
-        </div>
-        */}
         <h1 className={styles.hadding}>
           HI <span className={styles.dname}>{name}</span> welcome to your
           profile page
